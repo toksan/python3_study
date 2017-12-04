@@ -1,4 +1,1 @@
-# python_study
-# python3_study
-# python3_study
-# python3_study
+Python3の学習目的のソースコードです。
