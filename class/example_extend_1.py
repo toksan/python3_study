@@ -54,7 +54,7 @@ class TokyoBookStore(BookStore):
         return item
 
 
-tokyo_store = TokyoBookStore(13);
+tokyo_store = TokyoBookStore(13)
 print(tokyo_store.id)
 print(tokyo_store.name)
 print(tokyo_store.has_branch())

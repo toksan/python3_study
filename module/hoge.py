@@ -7,6 +7,7 @@ hogeモジュール
 
 hoge_var = 'Dog and Cat'
 
+
 def square(x):
     return x ** 2
 
