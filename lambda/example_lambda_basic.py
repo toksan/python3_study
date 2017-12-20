@@ -4,6 +4,7 @@
 
 # Basic
 
+# lambda式の変数代入はPEP8に準拠しない点に注意
 # 引数を3倍するラムダ式（無名関数）
 x3 = lambda arg: arg * 3
 

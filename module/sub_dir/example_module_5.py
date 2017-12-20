@@ -12,6 +12,7 @@ import sys
 # サンプルのためここでは相対パスで指定するが通常は絶対パスで指定する
 sys.path.append('..')  # sys.path.append('../') でもOK
 
+# importはファイルの最上部に書くこと。これはPEP8に準拠しない書き方です。
 import hoge
 
 # ../hoge.py で定義されている変数を使用
