@@ -131,6 +131,28 @@ try:
         (6, 'DAVIS')
         '''
 
+    # Tip - MySQLdb.cursors.DictCursor
+    print('\nget rows as tuple (default)')
+    cursor.execute('SELECT * FROM students ORDER BY id ASC LIMIT 3')
+    for row in cursor:
+        print(row[0], row[1])
+        '''
+        1 SMITH
+        2 JOHNSON
+        3 WILLIAMS
+        '''
+
+    print('\nget rows as dictionary')
+    dict_cursor = conn.cursor(MySQLdb.cursors.DictCursor)
+    dict_cursor.execute('SELECT * FROM students ORDER BY id ASC LIMIT 3')
+    for row in dict_cursor:
+        print(row['id'], row['name'])
+        '''
+        1 SMITH
+        2 JOHNSON
+        3 WILLIAMS
+        '''
+
     ##########
     # UPDATE #
     ##########
